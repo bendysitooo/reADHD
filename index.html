@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>reADHD — Página de descarga</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #241C17;
+  --surface: #2F251E;
+  --accent: #F0A165;
+  --accent-hover: #F7B37E;
+  --accent-soft: #4A3626;
+  --calm: #8FB3A0;
+  --calm-soft: #33443D;
+  --text: #F3E9DE;
+  --text-secondary: #C9B8AB;
+  --header-bg: #4A3626;
+  --header-text: #FBE4CE;
+  --font-display: 'Fredoka', sans-serif;
+  --font-body: 'Lexend', sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); line-height: 1.6; }
+h1,h2,h3 { font-family: var(--font-display); font-weight: 600; margin: 0; }
+p { margin: 0; color: var(--text-secondary); }
+
+.app { max-width: 1196px; margin: 0 auto; padding: 0 28px; }
+.header { display: flex; justify-content: space-between; align-items: center; padding: 23px 28px; margin: 28px 0; background: var(--header-bg); border-radius: 18px; }
+.header__mark { font-family: var(--font-display); font-size: 25px; color: var(--header-text); }
+
+.hero { text-align: center; padding: 55px 0 83px; }
+.hero__title { font-size: 51px; line-height: 1.15; }
+.hero__subtitle { max-width: 529px; margin: 23px auto 0; font-size: 19.5px; }
+.hero__downloads { display: flex; gap: 28px; justify-content: center; align-items: center; margin-top: 55px; flex-wrap: wrap; }
+
+.download-card { background: var(--surface); border: 1px solid var(--accent-soft); border-radius: 23px; padding: 37px; flex: 0 1 368px; min-width: 299px; margin: 0 auto; text-align: left; display: flex; flex-direction: column; gap: 11.5px; }
+.download-card__badge { align-self: flex-start; background: var(--calm-soft); color: var(--calm); font-size: 15px; font-weight: 600; padding: 5px 14px; border-radius: 999px; }
+.download-card__title { font-size: 23px; margin-top: 9px; }
+.download-card__description { font-size: 16.7px; }
+.download-card__button { display: inline-block; margin-top: 11.5px; background: var(--accent); color: #241C17; text-decoration: none; font-weight: 600; font-size: 17px; padding: 14px 23px; border-radius: 14px; text-align: center; border: none; }
+.download-card__button:hover { background: var(--accent-hover); }
+.download-card__meta { font-size: 15px; color: var(--text-secondary); }
+
+.footer { text-align: center; padding: 37px 0 55px; border-top: 1px solid var(--accent-soft); }
+.footer p { font-size: 15px; }
+
+@media (max-width: 736px) {
+  .hero__title { font-size: 37px; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <header class="header">
+    <span class="header__mark">reADHD</span>
+  </header>
+
+  <section class="hero">
+    <h1 class="hero__title">Lee más, en menos tiempo</h1>
+    <p class="hero__subtitle">reADHD convierte textos largos en resúmenes cortos y claros, pensado para personas con TDAH.</p>
+
+    <div class="hero__downloads">
+      <div class="download-card">
+        <span class="download-card__badge">App de escritorio</span>
+        <h3 class="download-card__title">Windows</h3>
+        <p class="download-card__description">Corre en segundo plano. Resume el texto seleccionado en cualquier programa</p>
+        <a class="download-card__button" href="Instalador_reADHD_Windows.exe" download="Instalador_reADHD_Windows.exe" type="application/vnd.microsoft.portable-executable">Descargar para Escritorio</a>
+        <span class="download-card__meta">Windows 10/11</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Proyecto de Diseño e Implementación de Sistemas Computacionales — Ignacio Ifran Videla y Exequiel Garcia Kraglievich</p>
+  </footer>
+
+</div>
+</body>
+</html>
